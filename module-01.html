@@ -1,0 +1,100 @@
+<!-- Fex -->
+<!-- <html>
+<head>
+<style>
+
+            .container {
+
+                display:flex;
+
+                padding: 20px;
+
+                flex-direction: row;
+
+                /* justify-content: space-between; */
+
+                align-items: center;
+
+            }
+
+            .dm {
+
+                margin: 10px;
+
+            }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="dm">Logo</div>
+<div class="dm">Search</div>
+<div class="dm">Cart</div>
+</div>
+</body>
+</html> -->
+ 
+<!-- Grid -->
+ 
+<html>
+<head>
+<style>
+
+            .products{
+
+                /* display: flex; */
+
+                display: grid;
+
+                grid-template-columns: repeat(3, 1fr);
+
+                gap: 20px;
+
+            }
+
+            .cards {
+
+                background: tomato;
+
+                width: 150px;
+
+                height: 150px;
+ 
+                color: white;
+ 
+                display: flex;
+
+                justify-content: center;
+
+                align-items: center;
+
+            }
+
+            
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 500px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+ 
+    </head>
+<body>
+<div class="products">
+<div class="cards"> Phone </div>
+<div class="cards"> Laptop </div>
+<div class="cards"> Watch </div>
+<div class="cards"> Headphone </div>
+<div class="cards"> Speakers </div>
+<div class="cards"> Chargers </div>
+</div>
+</body>
+</html>
+ 
