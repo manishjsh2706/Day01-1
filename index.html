@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>
+        Day 02
+    </title>
+</head>
+<body>
+    <center>
+        <h1>H1 Heading</h1>
+        <hr>
+        <img src="assets/wallpaper.jpg" width="50%">
+        <hr>
+        <div>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br><br>
+                <label for="phonenumber">Phone Number</label>
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Ticket Details</legend>
+                <label for="ticket type">Select ticket type</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="">--Select--</option>
+                    <option value="standard">Standard - $99</option>
+                    <option value="vip">VIP - $199</option>
+                    <option value="student">Student - $49</option>
+                </select>
+                
+                
+                <div class="radio-group">
+                    <label>Meal Preference *</label>
+                    <label><input type="radio" name="meal" value="veg" required> Vegetarian</label>
+                    <label><input type="radio" name="meal" value="nonveg"> Non-Vegetarian</label>
+                    <label><input type="radio" name="meal" value="vegan"> Vegan</label>
+                </div>
+                
+            </fieldset>
+
+            <!-- Additional -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>
+                <label for="comments">Special Requests</label><br>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requirements?"></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label>
+                </div>
+            </fieldset>
+
+      <!-- Submit -->
+      <button type="submit" class="submit-btn">Register Now</button>
+
+        </form>
+        </div>
+    
+    </center>
+</body>
